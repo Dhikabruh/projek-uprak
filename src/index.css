@@ -9,20 +9,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-
-  input {
-    width: 250px;
-    max-width: 250px;
-
-    display: block;
-    margin: 30px auto 40px auto;
-  }
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,7 +18,7 @@ body {
 
 input {
   display: block;
-  margin: 50px auto 0;
+  margin: 50px auto;
 
   width: 100%;
   max-width: 600px;
@@ -40,11 +26,29 @@ input {
   padding: 14px;
   border-radius: 12px;
   border: none;
-
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  input {
+    width: 220px;
+    max-width: 220px;
+    margin: 30px auto 60px auto;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
 }

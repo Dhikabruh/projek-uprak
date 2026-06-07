@@ -15,8 +15,8 @@ body {
   }
 
   input {
-    width: 90%;
-    max-width: 350px;
+    width: 250px;
+    max-width: 250px;
 
     display: block;
     margin: 30px auto 40px auto;
